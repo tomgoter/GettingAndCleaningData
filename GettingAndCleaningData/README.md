@@ -10,7 +10,7 @@ For this assignment we were asked to complete five objectives that would result 
 * Appropriately labels the data set with descriptive variable names.
 * From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-###*The process used in the run_analysis script does not assume the that the objectives need to be completed in the order that which they were listed on the Coursera website. Instead the process which seemed most logical to me was used. 
+### The process used in the run_analysis script does not assume the that the objectives need to be completed in the order that which they were listed on the Coursera website. Instead the process which seemed most logical to me was used. 
 
 # Pre-processing Steps
 1. The first thing that run_analysis does is to read in the *plyr*, *dplyr* and *tidyr* libraries. These libraries will be used throughout the script to varying degrees.
@@ -33,7 +33,7 @@ For this assignment we were asked to complete five objectives that would result 
 4. Appropriately labels the dataset
  + This was done in a couple of ways. The first step was to add column names for the subjectid and activity which were added to the dataset in step 3 above.  
  + These columns were appended at the beginning of the dataset, so they are columns 1 and 2 and are easily renamed simply by storing over the *colnames* of the appropriate column with a new character array.  
- + In this case the new columns were labeled "subjectid" and "activity" - Note that no underscore or capital letters were used to abide by the tidy data guidelines
+ + In this case the new columns were labeled *"subjectid"* and *"activity"* - Note that no underscore or capital letters were used to abide by the tidy data guidelines
  + The next step was to actually replace the activity ids with the more useful string which the id represents
  + The correspondence between activity label and activity is found in the *activity_labels.txt* file.
  + The process used to change the activity ids to the actual activity was a short six step *for* loop
@@ -47,7 +47,7 @@ For this assignment we were asked to complete five objectives that would result 
  + The output of the previous step is stored as *average_data* which is the data set requested.
  + The dataset is written to a csv file named *average_data.csv*
  
-## average_data is the independent, tidy dataset
+## *average_data* is the independent, tidy dataset and it is located in this repo
 
 # Summary
 ## Objectives-
