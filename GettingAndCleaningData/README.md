@@ -45,7 +45,7 @@ For this assignment we were asked to complete five objectives that would result 
  + The first step is to use the *groupby* function on the all_data dataset to apply the *subjectid* and *activity* as factors
  + The second step is to use the *summarize_all* function to generate the data table of interest. The *summarize_all* function is quite handy as it applies the provide summary function - in this case *mean* to all the columns/variables in the dataset.
  + The output of the previous step is stored as *average_data* which is the data set requested.
- + The dataset is written to a csv file named *average_data.csv*
+ + The dataset is written to a .txt file using the write.table funciton with row.names = FALSE - *average_data.txt*
  
 ## *average_data* is the independent, tidy dataset and it is located in this repo
 
